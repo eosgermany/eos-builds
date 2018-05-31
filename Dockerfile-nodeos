@@ -1,6 +1,6 @@
-FROM gcr.io/eoscanada-testnets/eosio-build-env:v6 as builder
+FROM eosio-build-env:v6 as builder
 
-ENV EOSIO_BRANCH dawn-v4.2.0
+ENV EOSIO_BRANCH DAWN-2018-05-30
 ENV EOSIO_REPOSITORY https://github.com/EOSIO/eos.git
 
 RUN git clone -b $EOSIO_BRANCH --depth 1 $EOSIO_REPOSITORY --recursive \
