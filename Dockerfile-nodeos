@@ -1,4 +1,4 @@
-FROM eosio-build-env:v6 as builder
+FROM eosio-build-env:v7 as builder
 
 #ENV EOSIO_BRANCH DAWN-2018-05-30
 #ENV EOSIO_REPOSITORY https://github.com/EOSIO/eos.git
