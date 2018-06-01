@@ -1,7 +1,10 @@
 FROM eosio-build-env:v6 as builder
 
+#ENV EOSIO_BRANCH DAWN-2018-05-30
+#ENV EOSIO_REPOSITORY https://github.com/EOSIO/eos.git
+
 ENV EOSIO_BRANCH DAWN-2018-05-30
-ENV EOSIO_REPOSITORY https://github.com/EOSIO/eos.git
+ENV EOSIO_REPOSITORY https://github.com/EOS-Mainnet/eos.git
 
 RUN git clone -b $EOSIO_BRANCH --depth 1 $EOSIO_REPOSITORY --recursive \
     && git clone -b master --depth 1 https://github.com/eoscanada/eos-bios \
