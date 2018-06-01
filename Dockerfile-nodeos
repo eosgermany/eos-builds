@@ -38,7 +38,8 @@ ENV EOSIO_ROOT=/opt/eosio
 VOLUME /opt/eosio/bin/data-dir
 ENV PATH /opt/eosio/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 
-# Fix for issue GLIBCXX_3.4.22' not found (required by /opt/eosio/bin/nodeos
+# Fix for issue GLIBCXX_3.4.22' not found (required by /opt/eosio/bin/nodeos)
+# Do not know why!
 RUN apt-get update -y
 RUN apt-get install -y software-properties-common
 RUN add-apt-repository ppa:ubuntu-toolchain-r/test -y
