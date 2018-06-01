@@ -10,6 +10,6 @@ Images are pushed to https://hub.docker.com/r/eoscanada/eos
 
 In case the latest docker images are not available, please use the following commands:
 
-$ docker build -t eosio-build-env:v7 - < Dockerfile-build-en
+$ docker build -t eosio-build-env:v7 - < Dockerfile-build-env
 
 $ docker build -t eosgermany/eos:DAWN-2018-05-30 - < Dockerfile-nodeos
